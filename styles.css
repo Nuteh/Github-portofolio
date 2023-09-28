@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1d;
+    padding-bottom: 40px;
+}
+
+
+/* Name "Igor" in the top-right corner */
+.name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Centered "Hi my name is Igor" text */
+.centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - 20px); /* Adjust height for proper centering */
+}
+
+.centered-text p {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #ffffff; /* You can choose your preferred text color */
+}
+
+.repositories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Repository box */
+.repository-box {
+    background-color: #1a1a1d; /* Transparent background */
+    border: 1px solid #333; /* Solid border with a color */
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+    text-align: left;
+    font-family: Arial, sans-serif; /* Use Arial (sans-serif) font */
+    color: #fff; /* Text color */
+}
+
+/* Repository name */
+.repository-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Repository description */
+.repository-description {
+    font-size: 14px;
+}
+
+/* Repository link */
+.repository-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px auto 0;
+    display: inline-block;
+    padding: 10px 50px; /* Adjust padding as needed */
+    border-radius: 50px; /* Use border-radius for round shape */
+    background-color: #1a1a1d; /* Button background color */
+    border: #ffffff 2px solid;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.repository-link:hover{
+    background-color: #333338;
+}
+
+.footer {
+    background-color: #1a1a1d;
+    color: #b1a3a3;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Use fixed position */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    color: #b1a3a3;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Style the copyright symbol */
+.footer span::before {
+    content: "\00a9";
+    font-size: 12px;
+    margin-right: 5px;
+}
